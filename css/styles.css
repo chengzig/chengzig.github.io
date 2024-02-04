@@ -1,0 +1,234 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+.container div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container div ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.container div a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.tab-content{
+    width: 95%;
+    height: 550px;
+    border: solid 2px rebeccapurple;
+    
+}
+
+.tab-content {
+    display: none;
+}
+
+#home{
+    width: 95%;
+    height: 550px;
+    background:url("../img/背景2.jpg") no-repeat center -370px;
+   
+    
+    display: block;
+    
+    
+}
+#home p{
+    padding: 0;
+      line-height: 1.7em;
+      letter-spacing: 1px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 18px;
+      color: #d80808;
+      text-shadow: 0 0 5px rgba(3, 233, 237, 0.8); /* 添加发光效果，白色，模糊半径为10px */
+}
+#home pre{
+    text-shadow: 0 0 5px rgba(3, 233, 237, 0.8); /* 添加发光效果，白色，模糊半径为10px */
+      padding: 0;
+      font-family: arial, sans-serif;
+      font-size: 18px;
+      margin: 0pxautoautoauto;
+      color: #d80808;
+}
+/*美食的css*/
+#food ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+#food ul li{
+    margin-right: 40px;
+}
+
+#food ul li p{
+    font-family: "幼圆", sans-serif;
+    color: red;
+}
+#food ul li img{
+    width: 300px;
+    height: 300px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*风景的css*/
+#wrap{
+    position: relative;
+    top: 10px;
+    left: 0;
+    height: 300px;
+    width: 500px;
+    overflow:hidden;
+}
+#scenery #wrap #main .page img{
+    height: 250px;
+    width: 500px;
+    margin:0;
+ }
+ #scenery #wrap #main .page p{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+ }
+ #scenery #wrap #main div{
+    float: left;
+    width: 500px;
+    height: 300px;
+    font-size: 26px;
+    display: flex;
+ }
+#main{
+   width: 2000px;
+   height: 300px;
+   position:relative;
+   transition: all 0.5s;
+   animation: auto_slide 6s steps(1, end) infinite;
+   
+    }
+    @keyframes auto_slide {
+        0% ,  100% {
+            left: 0;
+        }
+        25% {
+            left: -500px;
+        }
+        50% {
+            left: -1000px;
+        }
+        80% {
+            left: -1500px;
+        }
+}
+#text-contrduce p{
+    background: #e1e5e8;
+      font-family: "Georgia", Tahoma, Sans-Serif;
+      font-size: 16px;
+      line-height: 18px;
+      color: #888;
+}
+
+
+/*热点新闻*/
+#newsTitles li {
+    position: relative;
+    cursor: pointer; /* 设置鼠标指针为手指形状 */
+}
+
+.arrow {
+    margin-left: 5px; /* 调整箭头与标题的间距 */
+    opacity: 0; /* 初始状态下箭头透明 */
+    transition: opacity 0.3s; /* 添加淡入淡出的过渡效果 */
+}
+
+#newsTitles li:hover .arrow {
+    opacity: 1; /* 鼠标悬停时箭头显示 */
+}
+.news-content{
+    display: none;
+}
+#news1Content{
+    display: block;
+}
+.news h2 {
+    font-family: 'Dancing Script', cursive; /* 使用 Dancing Script 字体，如果无法加载则使用 cursive 作为备选字体 */
+    color: #ff69b4; /* 设置标题颜色为粉红色，可以根据需要调整颜色值 */
+}
+
+.news-content p {
+    font-family: 'Great Vibes', cursive; /* 使用 Great Vibes 字体，如果无法加载则使用 cursive 作为备选字体 */
+    color: #3498db; /* 设置新闻内容颜色为深蓝色，可以根据需要调整颜色值 */
+    font-size: 20px;
+}
+
+
+
+/*风土人情*/
+.culture {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* 设置图片背景色，可以根据需要调整颜色值 */
+    cursor: pointer; /* 设置鼠标指针为手指形状，表示可以点击 */
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+.description p {
+    font-family: 'Great Vibes', cursive; /* 使用 Great Vibes 字体，如果无法加载则使用 cursive 作为备选字体 */
+    color: #3498db; /* 设置新闻内容颜色为深蓝色，可以根据需要调整颜色值 */
+    font-size: 20px;
+}
+
+
+
+
+
+
